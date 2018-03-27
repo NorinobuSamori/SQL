@@ -43,7 +43,7 @@ from  item INNER JOIN item_category
 on item.category_id =  item_category.category_id      ;
 
 問題９
-select  sum(item_price) AS total_price  , category_name
+select  category_name , sum(item_price) AS total_price 
 from  item INNER JOIN item_category 
 on item.category_id =  item_category.category_id      
 GROUP BY item.category_id
